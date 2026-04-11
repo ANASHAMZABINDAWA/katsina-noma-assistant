@@ -1,0 +1,3 @@
+Cloudinary api: 389517732333453
+cloud name: dtnywddwk
+preset name: Katsina Noma Assistant

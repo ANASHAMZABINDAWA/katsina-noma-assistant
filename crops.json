@@ -1,0 +1,112 @@
+{
+  "crops": {
+    "millet": {
+      "name": "Millet (Gero)",
+      "scientific": "Pennisetum glaucum",
+      "season": "June - September",
+      "soil": "Sandy loam, well-drained",
+      "tips": "Highly drought tolerant. Plant early in June. Ideal for most parts of Katsina.",
+      "pests": "Striga (witchweed), Fall Armyworm, Quelea birds",
+      "emoji": "🌾"
+    },
+    "sorghum": {
+      "name": "Sorghum (Dawa)",
+      "scientific": "Sorghum bicolor",
+      "season": "June - October",
+      "soil": "Loamy soils",
+      "tips": "Excellent for dry zones. Use improved varieties like Samsorg-14 or KSV-8.",
+      "pests": "Fall Armyworm, Stem borer",
+      "emoji": "🌾"
+    },
+    "groundnut": {
+      "name": "Groundnut (Gyada)",
+      "scientific": "Arachis hypogaea",
+      "season": "June - September",
+      "soil": "Sandy loam",
+      "tips": "Plant in rows. Avoid waterlogging. Harvest between 90-110 days.",
+      "pests": "Aphids, Rosette disease, Termites",
+      "emoji": "🥜"
+    },
+    "cowpea": {
+      "name": "Cowpea (Wake)",
+      "scientific": "Vigna unguiculata",
+      "season": "June - August",
+      "soil": "Sandy to loamy",
+      "tips": "Nitrogen-fixing crop. Excellent for intercropping with millet or sorghum.",
+      "pests": "Maruca pod borer, Aphids, Flower thrips",
+      "emoji": "🫘"
+    },
+    "maize": {
+      "name": "Maize (Masara)",
+      "scientific": "Zea mays",
+      "season": "June - September",
+      "soil": "Fertile loamy soil",
+      "tips": "Needs good rainfall and timely fertilizer application.",
+      "pests": "Fall Armyworm, Stem borer, Birds",
+      "emoji": "🌽"
+    },
+    "cotton": {
+      "name": "Cotton",
+      "scientific": "Gossypium hirsutum",
+      "season": "June - October",
+      "soil": "Sandy loam to loamy",
+      "tips": "Katsina is one of Nigeria's largest producers.",
+      "pests": "Bollworm, Aphids, Whiteflies",
+      "emoji": "☁️"
+    },
+    "sesame": {
+      "name": "Sesame (Benne)",
+      "scientific": "Sesamum indicum",
+      "season": "June - September",
+      "soil": "Sandy loam",
+      "tips": "High value cash crop. Very drought tolerant.",
+      "pests": "Leaf roller, Capsule borer",
+      "emoji": "🌿"
+    },
+    "tomato": {
+      "name": "Tomato",
+      "scientific": "Solanum lycopersicum",
+      "season": "June - September and Dry season with irrigation",
+      "soil": "Fertile loamy soil, rich in organic matter",
+      "tips": "Major vegetable crop in Katsina. Needs staking and regular watering.",
+      "pests": "Tuta absoluta (fruit borer), Aphids, Bacterial wilt",
+      "emoji": "🍅"
+    },
+    "onion": {
+      "name": "Onion",
+      "scientific": "Allium cepa",
+      "season": "October - March with irrigation",
+      "soil": "Well-drained loamy soil",
+      "tips": "Very profitable cash crop. Katsina produces large quantities.",
+      "pests": "Thrips, Onion fly, Purple blotch disease",
+      "emoji": "🧅"
+    },
+    "pepper": {
+      "name": "Pepper",
+      "scientific": "Capsicum spp",
+      "season": "June - September and Dry season",
+      "soil": "Fertile loamy soil",
+      "tips": "High demand vegetable. Can be intercropped.",
+      "pests": "Aphids, Fruit flies, Anthracnose",
+      "emoji": "🌶️"
+    },
+    "sugarcane": {
+      "name": "Sugarcane",
+      "scientific": "Saccharum officinarum",
+      "season": "Year round with irrigation",
+      "soil": "Fertile alluvial soil",
+      "tips": "Good cash income crop.",
+      "pests": "Stem borers, Scale insects",
+      "emoji": "🌱"
+    },
+    "soybean": {
+      "name": "Soybean",
+      "scientific": "Glycine max",
+      "season": "June - September",
+      "soil": "Well-drained loamy soil",
+      "tips": "Growing fast due to high demand for oil and protein.",
+      "pests": "Stem fly, Aphids, Pod borer",
+      "emoji": "🌱"
+    }
+  }
+}
