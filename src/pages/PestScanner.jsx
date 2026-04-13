@@ -15,7 +15,7 @@ const PestScanner = () => {
   const capturePhoto = async () => {
     const screenshot = webcamRef.current?.getScreenshot();
     if (!screenshot) {
-      setError("Failed to capture image");
+      setError("Failed to capture image from camera");
       return;
     }
 
@@ -40,7 +40,12 @@ const PestScanner = () => {
         throw new Error(data.error || "Failed to identify pest");
       }
 
-      setResult({ reply: data.reply });
+      // Ensure we have a reply string
+      const replyText = typeof data.reply === 'string' 
+        ? data.reply 
+        : "Sorry, I couldn't analyze the image properly.";
+
+      setResult({ reply: replyText });
 
     } catch (err) {
       console.error(err);
@@ -55,7 +60,7 @@ const PestScanner = () => {
       <div className="text-center mb-8">
         <Bug className="w-16 h-16 text-red-600 mx-auto mb-3" />
         <h2 className="text-3xl font-bold text-red-700">Pest Identifier</h2>
-        <p className="text-gray-600 mt-2">Take photo of pest or damaged leaves</p>
+        <p className="text-gray-600 mt-2">Take clear photo of pest or damaged leaves</p>
       </div>
 
       <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
@@ -71,9 +76,9 @@ const PestScanner = () => {
         <button
           onClick={capturePhoto}
           disabled={loading}
-          className="flex-1 bg-gradient-to-r from-red-600 to-rose-600 text-white py-5 rounded-3xl text-xl font-semibold flex items-center justify-center gap-3 shadow-lg active:scale-95 transition disabled:opacity-70"
+          className="flex-1 bg-gradient-to-r from-red-600 to-rose-600 text-white py-5 rounded-3xl text-lg font-semibold flex items-center justify-center gap-3 shadow-lg active:scale-95 transition disabled:opacity-70"
         >
-          {loading ? "Analyzing Pest..." : <><Camera className="w-7 h-7" /> Identify Pest Now</>}
+          {loading ? "Analyzing..." : <><Camera className="w-7 h-7" /> Identify Pest</>}
         </button>
 
         <button
@@ -85,15 +90,21 @@ const PestScanner = () => {
       </div>
 
       {error && (
-        <div className="mt-6 p-5 bg-red-50 border border-red-200 text-red-700 rounded-2xl flex gap-3">
-          <AlertCircle className="w-6 h-6 mt-1" />
-          <p>{error}</p>
+        <div className="mt-6 p-5 bg-red-50 border border-red-200 text-red-700 rounded-2xl">
+          {error}
         </div>
       )}
 
       {result && (
         <div className="mt-8 bg-white rounded-3xl p-6 shadow-xl whitespace-pre-wrap leading-relaxed text-gray-800">
           {result.reply}
+        </div>
+      )}
+
+      {image && !result && !error && (
+        <div className="mt-6">
+          <p className="text-sm text-gray-500 mb-2">Captured Image:</p>
+          <img src={image} alt="captured pest" className="w-full rounded-2xl shadow" />
         </div>
       )}
     </div>
