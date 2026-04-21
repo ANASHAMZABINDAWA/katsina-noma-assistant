@@ -2,7 +2,10 @@ import { useState, useRef, useEffect } from 'react';
 import { Send, Bot, User, Globe } from 'lucide-react';
 
 // In Assistant.jsx and PestScanner.jsx
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL 
+
+
+//|| "http://localhost:3000";
 
 const Assistant = () => {
   const [messages, setMessages] = useState([]);
